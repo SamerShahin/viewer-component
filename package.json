@@ -38,7 +38,8 @@
   },
   "yoshi": {
     "entry": {
-      "app": "./components/App/App.js"
+      "app": "./components/App/App.js",
+      "viewerScript": "./ViewerScript.js"
     },
   "externals": {
       "react": {

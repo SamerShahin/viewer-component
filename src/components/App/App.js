@@ -5,9 +5,11 @@ class App extends React.Component {
   render() {
 
     return (
-      <div>Hello Worlds</div>
+      <div style={{fontSize: '20px'}}>Hello {this.props.name}</div>
     );
   }
 }
 
-export default App;
+export default {
+  component: App
+};
