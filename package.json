@@ -11,7 +11,7 @@
     "start": "yoshi start",
     "precommit": "lint-staged",
     "pretest": "yoshi build",
-    "test": "yoshi test --jest",
+    "test": "#",
     "posttest": "yoshi lint",
     "release": "yoshi release"
   },
@@ -41,11 +41,23 @@
     "*.{js,scss,less}": "yoshi lint"
   },
   "yoshi": {
-    "externals": {
-      "react": "React",
+    "entry": {
+      "app": "./components/App/App.js"
+    },
+  "externals": {
+      "react": {
+      "amd": "react",
+      "umd": "react",
+      "commonjs": "react",
+      "commonjs2": "react",
+      "root": "React"
+    },
       "react-dom": "ReactDOM"
     },
-    "hmr": "auto"
+    "exports": "App",
+    "umdNamedDefine": false,
+    "hmr": false,
+    "liveReload": false
   },
   "jest": {
     "preset": "jest-yoshi-preset"
@@ -58,4 +70,5 @@
   "eslintConfig": {
     "extends": "yoshi"
   }
+
 }
