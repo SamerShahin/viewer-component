@@ -1,0 +1,19 @@
+:vars {
+
+   /*@type COLOR_ALPHA */
+  param_color__backgroundColor: #d84451;
+
+   /*@type COLOR_ALPHA*/
+  param_color__titleColor: #a81800;
+
+}
+
+
+.text {
+  color: value(param_color__titleColor);
+  background-color: value(param_color__backgroundColor);
+
+  font-size: 20px
+}
+
+
