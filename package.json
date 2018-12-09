@@ -9,11 +9,7 @@
   },
   "scripts": {
     "start": "yoshi start",
-    "precommit": "lint-staged",
-    "pretest": "yoshi build",
-    "test": "#",
-    "posttest": "yoshi lint",
-    "release": "yoshi release"
+    "test": "#"
   },
   "devDependencies": {
     "enzyme": "~2.9.0",
