@@ -25,14 +25,12 @@
     "yoshi-style-dependencies": "^3.0.0"
   },
   "dependencies": {
-    "@wix/wix-axios-config": "latest",
     "axios": "~0.16.0",
     "i18next": "^11.6.0",
     "prop-types": "~15.6.0",
     "react": "15.6.1",
     "react-dom": "15.6.1",
-    "react-i18next": "^7.11.0",
-    "stylable-santa": "^1.0.20"
+    "react-i18next": "^7.11.0"
   },
   "lint-staged": {
     "*.{js,scss,less}": "yoshi lint"
@@ -55,7 +53,14 @@
     "exports": "App",
     "umdNamedDefine": false,
     "hmr": false,
-    "liveReload": false
+    "liveReload": true,
+    "servers": {
+      "cdn": {
+        "port": 3200,
+        "dir": "dist/statics",
+        "ssl": false
+      }
+    }
   },
   "jest": {
     "preset": "jest-yoshi-preset"

@@ -3,6 +3,7 @@ const session = require('express-session');
 const renderVM = require('./vm');
 
 const app = express();
+const PORT = 9001;
 
 // Register an express middleware. Learn more: http://expressjs.com/en/guide/using-middleware.html.
 app.use(
@@ -27,8 +28,7 @@ app.use('/', (req, res) => {
 
   res.send(html);
 });
-
 // Launch the server
-app.listen(process.env.PORT, () => {
-  console.info(`Fake server is running on port ${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.info(`Fake server is running on port ${PORT}`);
 });

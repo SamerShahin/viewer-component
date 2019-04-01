@@ -8,6 +8,7 @@
     <script src="https://${clientTopology.staticsDomain}/polyfill/v2/polyfill#if(!${debug}).min#{end}.js?features=default,es6,es7,es2017&flags=gated&unknown=polyfill&rum=0"></script>
     <script src="https://${clientTopology.staticsDomain}/unpkg/react@15.6.1/dist/react#if(!${debug}).min#{end}.js"></script>
     <script src="https://${clientTopology.staticsDomain}/unpkg/react-dom@15.6.1/dist/react-dom#if(!${debug}).min#{end}.js"></script>
+    <script src="//static.parastorage.com/services/js-sdk/1.105.0/js/wix-private.min.js"></script>
   </head>
   <body>
     <div id="visit-count">Visit count: ${visitCount}</div>
